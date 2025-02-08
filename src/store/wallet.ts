@@ -1,26 +1,12 @@
-import { create } from "zustand";
-import { WindowWithEthereum } from "../types";
 import { ethers, parseUnits } from "ethers";
+import { create } from "zustand";
 import { isErrorWithMessage } from "../utils/error";
-
-const windowWithEthereum = window as unknown as WindowWithEthereum;
-
-export const TOKEN_ADDRESS = import.meta.env.VITE_TOKEN_ADDRESS;
-if (!TOKEN_ADDRESS) {
-  console.error(`Missing env variable VITE_TOKEN_ADDRESS`);
-}
-
-export const TOKEN_ABI = [
-  "function symbol() view returns (string)",
-  "function balanceOf(address) view returns (uint)",
-  "function transfer(address to, uint amount)",
-];
-
-type DummyToken = ethers.Contract & {
-  symbol: () => Promise<string>;
-  balanceOf: (address: string) => Promise<bigint>;
-  transfer: (to: string, amount: number) => Promise<void>;
-};
+import {
+  DummyToken,
+  TOKEN_ABI,
+  TOKEN_ADDRESS,
+  windowWithEthereum,
+} from "../utils/token";
 
 interface WalletStore {
   address: string;
@@ -29,8 +15,14 @@ interface WalletStore {
   isConnected: boolean;
   isSending: boolean;
   error: string | null;
-  onConnect: () => void;
-  transfer: ({ address, amount }: { address: string; amount: number }) => void;
+  onConnect: () => Promise<void>;
+  transfer: ({
+    address,
+    amount,
+  }: {
+    address: string;
+    amount: number;
+  }) => Promise<void>;
 }
 
 export const useWalletStore = create<WalletStore>((set) => ({
@@ -62,7 +54,7 @@ export const useWalletStore = create<WalletStore>((set) => ({
         balance,
       });
     } catch (error) {
-      set({
+      return set({
         isConnecting: false,
         isConnected: false,
         error: isErrorWithMessage(error) ? error.message : "Unknown error",
@@ -81,7 +73,6 @@ export const useWalletStore = create<WalletStore>((set) => ({
         signer,
       ) as DummyToken;
 
-      console.log({ address, amount });
       const data = contract.interface.encodeFunctionData("transfer", [
         address,
         amount,
@@ -95,6 +86,8 @@ export const useWalletStore = create<WalletStore>((set) => ({
       });
 
       await tx.wait();
+
+      useWalletStore.getState().onConnect();
 
       return set({
         isSending: false,

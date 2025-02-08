@@ -12,15 +12,19 @@ type Inputs = {
 export function Transfer() {
   const navigate = useNavigate();
   const walletStore = useWalletStore();
-  const {
-    control,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<Inputs>();
+  const form = useForm<Inputs>();
 
   const handleBack = useCallback(() => {
     navigate(-1);
   }, [navigate]);
+
+  const handleTransfer = useCallback(
+    async (data: Inputs) => {
+      await walletStore.transfer(data);
+      navigate(-1);
+    },
+    [navigate, walletStore],
+  );
 
   return (
     <Modal size="tiny" open={true}>
@@ -30,26 +34,35 @@ export function Transfer() {
         onBack={handleBack}
         onClose={handleBack}
       />
-      <Form onSubmit={handleSubmit(walletStore.transfer)}>
+      <Form onSubmit={form.handleSubmit(handleTransfer)}>
         <Modal.Content>
           <Controller
             name="amount"
-            control={control}
+            control={form.control}
             rules={{ required: "The amount is required", min: 0 }}
             render={({ field }) => (
-              <Field
-                {...field}
-                label="Amount"
-                placeholder="0"
-                type="number"
-                error={!!errors.amount}
-                message={errors.amount?.message}
-              />
+              <div>
+                <Field
+                  {...field}
+                  label="Amount"
+                  placeholder="0"
+                  type="number"
+                  error={!!form.formState.errors.amount}
+                  message={form.formState.errors.amount?.message}
+                  action="Max"
+                  onAction={() =>
+                    form.setValue(
+                      "amount",
+                      Number(walletStore.balance.toString()),
+                    )
+                  }
+                />
+              </div>
             )}
           />
           <Controller
             name="address"
-            control={control}
+            control={form.control}
             rules={{ required: "The address is required" }}
             render={({ field }) => (
               <Field
@@ -57,8 +70,8 @@ export function Transfer() {
                 label="Address"
                 placeholder="0x..."
                 type="address"
-                error={!!errors.address}
-                message={errors.address?.message}
+                error={!!form.formState.errors.address}
+                message={form.formState.errors.address?.message}
               />
             )}
           />
