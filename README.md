@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# Decentraland dApps exercise V2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Requirements](https://decentraland.notion.site/dApps-exercise-V2-7a0f0b51ca1442fc864573fd997388ec)
 
-Currently, two official plugins are available:
+## Caveats
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- decentraland/ui is pretty outdated, in order to use modern library versions and being able to run the dev server and tests I forked it, fixed the issues and published under my npm user
+- I understand that decentraland team may use redux and redux saga in production, and that's fine, but I consider there are better and simpler alternatives nowadays, you can see it reflected in the code
+- Testing could be improved in the future, adding unit and e2e tests, In this case, I did not go into more detail beacuse I ignore how to mock window.ethereum properly
 
-## Expanding the ESLint configuration
+## Steps
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Clone dummy token repository
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+```sh
+git clone git@github.com:decentraland/dummy-token.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Setup dummy token
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+Follow repo readme
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
+> https://github.com/decentraland/dummy-token/blob/master/README.md
+
+### Clone this repo
+
+```sh
+git clone git@github.com:bertilxi/dcl-challenge.git
+```
+
+### Install dependencies
+
+```sh
+npm i
+```
+
+### Setup environment variables
+
+```sh
+cp .env.example .env
+```
+
+> Replace `VITE_TOKEN_ADDRESS` with the address of the dummy token
+
+### Run the app
+
+```sh
+npm run dev
+```
+
+### Build the app
+
+```sh
+npm run build
+```
+
+### Run tests
+
+```sh
+npm run test
 ```
