@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { windowWithEthereum } from "./utils/token";
 import { useWalletStore } from "./store/wallet";
 import { Provider } from "ethers";
+import { Toaster } from "sonner";
 
 export function App() {
   const location = useLocation();
@@ -43,6 +44,8 @@ export function App() {
           <Route path="transfer" element={<Transfer />} />
         </Routes>
       )}
+
+      <Toaster richColors />
     </>
   );
 }

@@ -7,6 +7,7 @@ import {
   TOKEN_ADDRESS,
   windowWithEthereum,
 } from "../utils/token";
+import { toast } from "sonner";
 
 interface WalletStore {
   address: string;
@@ -88,6 +89,8 @@ export const useWalletStore = create<WalletStore>((set) => ({
       await tx.wait();
 
       useWalletStore.getState().onConnect();
+
+      toast.success("Transfer completed");
 
       return set({
         isSending: false,
