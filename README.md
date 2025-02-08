@@ -2,6 +2,9 @@
 
 [Requirements](https://decentraland.notion.site/dApps-exercise-V2-7a0f0b51ca1442fc864573fd997388ec)
 
+## Demo
+https://github.com/user-attachments/assets/6160ce22-3ce7-4850-8bff-26ca895a91f8
+
 ## Caveats
 
 - decentraland/ui is pretty outdated, in order to use modern library versions and being able to run the dev server and tests I forked it, fixed the issues and published under my npm user
