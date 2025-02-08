@@ -1,4 +1,10 @@
-import { Button, Field, Form, Modal, ModalNavigation } from "decentraland-ui";
+import {
+  Button,
+  Field,
+  Form,
+  Modal,
+  ModalNavigation,
+} from "@bertilxi/decentraland-ui";
 import { useCallback } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { useNavigate } from "react-router";

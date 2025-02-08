@@ -1,0 +1,763 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home page didn't change 1`] = `
+<DocumentFragment>
+  <div
+    class="dui-navbar unselected"
+    role="navigation"
+  >
+    <div
+      class="ui container dui-navbar-container"
+    >
+      <div
+        class="dui-navbar-menu"
+      >
+        <div
+          class="dui-navbar-wrapper"
+        />
+        <div
+          class="dui-navbar-account"
+        >
+          <div
+            class="dcl column right grow shrink"
+          >
+            <div
+              class="dcl row left dcl user-menu-wrapper grow shrink"
+            >
+              <div
+                class="dcl user-menu"
+                tabindex="0"
+              >
+                <button
+                  class="ui inverted button"
+                >
+                  Sign In
+                </button>
+                <a
+                  class="ui primary button user-menu__download"
+                  href="https://decentraland.org/download/"
+                  role="button"
+                >
+                  <svg
+                    fill="none"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      clip-path="url(#clip0_6_9647)"
+                    >
+                      <path
+                        d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z"
+                        fill="#323232"
+                      />
+                    </g>
+                    <defs>
+                      <clippath
+                        id="clip0_6_9647"
+                      >
+                        <rect
+                          fill="white"
+                          height="24"
+                          width="24"
+                        />
+                      </clippath>
+                    </defs>
+                  </svg>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="dui-submenu-container undefined-selected"
+    >
+      <div
+        class="item submenu marketplace-submenu"
+      >
+        <div
+          class="submenu-column__wrapper"
+        >
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/marketplace"
+              >
+                <h1>
+                  Overview
+                </h1>
+                <p>
+                  See what's trending & new
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/marketplace/names/claim"
+              >
+                <h1>
+                  NAMEs
+                </h1>
+                <p>
+                  Claim a NAME, get a whole World
+                </p>
+              </a>
+            </div>
+          </div>
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/marketplace/browse?section=wearables&vendor=decentraland&page=1&sortBy=newest&status=on_sale"
+              >
+                <h1>
+                  Wearables
+                </h1>
+                <p>
+                  Customize your digital identity
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/marketplace/lands"
+              >
+                <h1>
+                  LAND
+                </h1>
+                <p>
+                  Buy or Rent parcels on the Genesis City map
+                </p>
+              </a>
+            </div>
+          </div>
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/marketplace/browse?assetType=item&section=emotes&vendor=decentraland&page=1&sortBy=newest&status=on_sale"
+              >
+                <h1>
+                  Emotes
+                </h1>
+                <p>
+                  Animate your avatar
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/marketplace/account?assetType=nft&section=wearables&vendor=decentraland&page=1&sortBy=newest&onlyOnSale=false"
+              >
+                <h1>
+                  My Assets
+                </h1>
+                <p>
+                  Manage your assets, listings, bids, & more
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="item submenu create-submenu"
+      >
+        <div
+          class="submenu-column__wrapper"
+        >
+          <div
+            class="dui-submenu-column dui-submenu-column-title"
+          >
+            <h1>
+               
+            </h1>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/create/"
+              >
+                <h1>
+                  Create in Decentraland
+                </h1>
+                <p>
+                  Discover all the benefits and possibilities
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item dui-submenu-item-external"
+            >
+              <a
+                href="https://studios.decentraland.org/"
+              >
+                <h1>
+                  Decentraland Studios
+                </h1>
+                <p>
+                  Hire pros to transform your ideas to reality
+                </p>
+                <div
+                  class="dui-icon-container centered"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.7158 11.9549L11.7997 11.9674L11.7997 4.00746L1.51738 14.3152L0.139735 12.9342L10.422 2.62639L2.49426 2.63894L2.49426 0.705449H13.7158L13.7158 11.9549Z"
+                      fill="var(--navbar-icons)"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="dui-submenu-column dui-submenu-column-title"
+          >
+            <h1>
+              PUBLISH
+            </h1>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/builder/collections"
+              >
+                <h1>
+                  Wearables & Emotes
+                </h1>
+                <p>
+                  Publish & manage Marketplace collections
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/download/creator-hub/"
+              >
+                <h1>
+                  Scenes
+                </h1>
+                <p>
+                  Create & publish scenes to LAND or Worlds
+                </p>
+              </a>
+            </div>
+          </div>
+          <div
+            class="dui-submenu-column dui-submenu-column-title"
+          >
+            <h1>
+              MANAGE
+            </h1>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/builder/names"
+              >
+                <h1>
+                  My NAMEs
+                </h1>
+                <p>
+                  Create & manage NAMEs
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/builder/worlds?tab=dcl"
+              >
+                <h1>
+                  My Worlds
+                </h1>
+                <p>
+                  Manage Worlds & Worlds storage
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/builder/land"
+              >
+                <h1>
+                  My LAND
+                </h1>
+                <p>
+                  Manage parcel permissions & more
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="item submenu explore-submenu"
+      >
+        <div
+          class="submenu-column__wrapper"
+        >
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/events"
+              >
+                <h1>
+                  Events
+                </h1>
+                <p>
+                  Find an event to jump into
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/events/me/"
+              >
+                <h1>
+                  My Events
+                </h1>
+                <p>
+                  See saved events & events you’re hosting
+                </p>
+              </a>
+            </div>
+          </div>
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/places"
+              >
+                <h1>
+                  Places
+                </h1>
+                <p>
+                  Browse locations in Genesis City & Worlds
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/places/favorites/"
+              >
+                <h1>
+                  My Favorite Places
+                </h1>
+                <p>
+                  See your saved locations
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="item submenu learn-submenu"
+      >
+        <div
+          class="submenu-column__wrapper"
+        >
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://docs.decentraland.org/player/"
+              >
+                <h1>
+                  About Decentraland
+                </h1>
+                <p>
+                  FAQs, Whitepaper, & DAO docs
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://docs.decentraland.org/creator/"
+              >
+                <h1>
+                  Creator Docs
+                </h1>
+                <p>
+                  Make Wearables, Emotes, scenes, games, & more
+                </p>
+              </a>
+            </div>
+          </div>
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item dui-submenu-item-external"
+            >
+              <a
+                href="https://decentraland.org/blog/"
+              >
+                <h1>
+                  Blog
+                </h1>
+                <p>
+                  News, Community Highlights, & more
+                </p>
+                <div
+                  class="dui-icon-container centered"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.7158 11.9549L11.7997 11.9674L11.7997 4.00746L1.51738 14.3152L0.139735 12.9342L10.422 2.62639L2.49426 2.63894L2.49426 0.705449H13.7158L13.7158 11.9549Z"
+                      fill="var(--navbar-icons)"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://docs.decentraland.org/contributor/"
+              >
+                <h1>
+                  Open Protocol Docs
+                </h1>
+                <p>
+                  See how Decentraland works & contribute
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="item submenu governance-submenu"
+      >
+        <div
+          class="submenu-column__wrapper"
+        >
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/dao"
+              >
+                <h1>
+                  Overview
+                </h1>
+                <p>
+                  Learn more about the DAO and what it does for the Decentraland ecosystem
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/governance/transparency/"
+              >
+                <h1>
+                  DAO Transparency
+                </h1>
+                <p>
+                  Treasury, Activity Dashboards, & more
+                </p>
+              </a>
+            </div>
+          </div>
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/governance/proposals/"
+              >
+                <h1>
+                  Proposals
+                </h1>
+                <p>
+                  Vote on active proposals
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item dui-submenu-item-external"
+            >
+              <a
+                href="https://decentraland.org/dao/grants/"
+              >
+                <h1>
+                  DAO Grants
+                </h1>
+                <p>
+                  Community grants overview, highlights, & resources
+                </p>
+                <div
+                  class="dui-icon-container centered"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.7158 11.9549L11.7997 11.9674L11.7997 4.00746L1.51738 14.3152L0.139735 12.9342L10.422 2.62639L2.49426 2.63894L2.49426 0.705449H13.7158L13.7158 11.9549Z"
+                      fill="var(--navbar-icons)"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="dui-submenu-column"
+          >
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://decentraland.org/governance/projects/"
+              >
+                <h1>
+                  Active Grants
+                </h1>
+                <p>
+                  Browse grant-funded community projects
+                </p>
+              </a>
+            </div>
+            <div
+              class="dui-submenu-item"
+            >
+              <a
+                href="https://docs.decentraland.org/player/general/dao/overview/what-is-the-dao/"
+              >
+                <h1>
+                  DAO Docs
+                </h1>
+                <p>
+                  Read more about how the DAO works and how to participate
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="dcl page App"
+  >
+    <div
+      class="ui container"
+    >
+      <div
+        class="dcl center"
+      >
+        <button
+          class="ui primary button"
+        >
+          Connect
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ui container dcl footer"
+  >
+    <div
+      class="main-footer"
+    >
+      <div
+        aria-expanded="false"
+        class="ui upward dropdown dcl language-dropdown"
+        role="listbox"
+        tabindex="0"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="polite"
+          class="divider text"
+          role="alert"
+        >
+          <div
+            class="dcl language-icon-wrapper"
+          >
+            <i
+              class="dcl language-icon en"
+            />
+            <div
+              class="language-icon-label"
+            >
+              English
+            </div>
+          </div>
+        </div>
+        <i
+          aria-hidden="true"
+          class="dropdown icon"
+        />
+        <div
+          class="right menu transition"
+        >
+          <div
+            aria-checked="true"
+            aria-selected="true"
+            class="active selected item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <div
+              class="dcl language-icon-wrapper"
+            >
+              <i
+                class="dcl language-icon en"
+              />
+              <div
+                class="language-icon-label"
+              >
+                English
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="links"
+      >
+        <a
+          href="https://decentraland.org"
+        >
+          Home
+        </a>
+        <a
+          href="https://decentraland.org/privacy"
+        >
+          Privacy Policy
+        </a>
+        <a
+          href="https://decentraland.org/terms"
+        >
+          Terms of Use
+        </a>
+        <a
+          href="https://decentraland.org/content"
+        >
+          Content Policy
+        </a>
+        <a
+          href="https://decentraland.org/ethics"
+        >
+          Code of Ethics
+        </a>
+        <a
+          href="https://decentraland.canny.io"
+        >
+          Feature Request
+        </a>
+      </div>
+    </div>
+    <div
+      class="secondary-footer"
+    >
+      <div
+        class="social-links"
+      >
+        <a
+          href="https://dcl.gg/discord"
+        >
+          <i
+            class="social-icon discord"
+          />
+        </a>
+        <a
+          href="https://reddit.com/r/decentraland"
+        >
+          <i
+            class="social-icon reddit"
+          />
+        </a>
+        <a
+          href="https://github.com/decentraland"
+        >
+          <i
+            class="social-icon github"
+          />
+        </a>
+        <a
+          href="https://twitter.com/decentraland"
+        >
+          <i
+            class="social-icon twitter"
+          />
+        </a>
+      </div>
+      <div
+        class="copyright"
+      >
+        © 2025 Decentraland
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

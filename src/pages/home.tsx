@@ -8,7 +8,7 @@ import {
   Navbar,
   Page,
   PageProps,
-} from "decentraland-ui";
+} from "@bertilxi/decentraland-ui";
 import { FC, PropsWithChildren } from "react";
 import { Link } from "react-router";
 import { useWalletStore } from "../store/wallet";
