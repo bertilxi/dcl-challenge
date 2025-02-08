@@ -1,4 +1,5 @@
 import { ethers, parseUnits } from "ethers";
+import { toast } from "sonner";
 import { create } from "zustand";
 import { isErrorWithMessage } from "../utils/error";
 import {
@@ -7,7 +8,6 @@ import {
   TOKEN_ADDRESS,
   windowWithEthereum,
 } from "../utils/token";
-import { toast } from "sonner";
 
 interface WalletStore {
   address: string;

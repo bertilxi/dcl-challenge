@@ -1,11 +1,11 @@
+import { Provider } from "ethers";
+import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router";
+import { Toaster } from "sonner";
 import { Home } from "./pages/home";
 import { Transfer } from "./pages/transfer";
-import { useEffect } from "react";
-import { windowWithEthereum } from "./utils/token";
 import { useWalletStore } from "./store/wallet";
-import { Provider } from "ethers";
-import { Toaster } from "sonner";
+import { windowWithEthereum } from "./utils/token";
 
 export function App() {
   const location = useLocation();
